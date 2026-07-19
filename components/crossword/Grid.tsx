@@ -33,12 +33,10 @@ export function Grid() {
 
   if (!puzzle) return null;
 
-  const activeClue = useGameStore.getState().puzzle
-    ? [...puzzle.across, ...puzzle.down].find((c) => {
-        if (direction === "across") return c.direction === "across" && c.startRow === cursor.row && cursor.col >= c.startCol && cursor.col < c.startCol + c.answer.length;
-        return c.direction === "down" && c.startCol === cursor.col && cursor.row >= c.startRow && cursor.row < c.startRow + c.answer.length;
-      })
-    : undefined;
+  const activeClue = [...puzzle.across, ...puzzle.down].find((c) => {
+    if (direction === "across") return c.direction === "across" && c.startRow === cursor.row && cursor.col >= c.startCol && cursor.col < c.startCol + c.answer.length;
+    return c.direction === "down" && c.startCol === cursor.col && cursor.row >= c.startRow && cursor.row < c.startRow + c.answer.length;
+  });
 
   function isInActiveWord(r: number, c: number): boolean {
     if (!activeClue) return false;
@@ -53,7 +51,11 @@ export function Grid() {
   return (
     <div
       className="grid select-none gap-[2px] rounded-xl bg-white/5 p-[2px] shadow-2xl mx-auto"
-      style={{ gridTemplateColumns: `repeat(${puzzle.cols}, minmax(0, 1fr))`, maxWidth: `min(90vw, ${puzzle.cols * 44}px)` }}
+      style={{
+        gridTemplateColumns: `repeat(${puzzle.cols}, minmax(0, 1fr))`,
+        width: `min(92vw, ${puzzle.cols * 44}px)`,
+        maxWidth: `min(92vw, ${puzzle.cols * 44}px)`,
+      }}
       role="grid"
       aria-label={`${puzzle.title} crossword grid`}
     >

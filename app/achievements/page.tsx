@@ -1,10 +1,39 @@
 "use client";
 import { useEffect, useState } from "react";
-import * as Icons from "lucide-react";
+import {
+  Target,
+  Ban,
+  Zap,
+  Wrench,
+  Plane,
+  Flag,
+  Bike,
+  CalendarCheck,
+  Battery,
+  Trophy,
+  Flame,
+  Crown,
+  type LucideIcon,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ACHIEVEMENTS } from "@/lib/achievements";
 import { useProgressStore } from "@/lib/store/useProgressStore";
 import { cn } from "@/lib/utils";
+
+const ICONS: Record<string, LucideIcon> = {
+  Target,
+  Ban,
+  Zap,
+  Wrench,
+  Plane,
+  Flag,
+  Bike,
+  CalendarCheck,
+  Battery,
+  Trophy,
+  Flame,
+  Crown,
+};
 
 export default function AchievementsPage() {
   const [hydrated, setHydrated] = useState(false);
@@ -20,7 +49,7 @@ export default function AchievementsPage() {
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {ACHIEVEMENTS.map((a) => {
           const unlocked = hydrated && earned.includes(a.id);
-          const Icon = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[a.icon] ?? Icons.Trophy;
+          const Icon = ICONS[a.icon] ?? Trophy;
           return (
             <Card key={a.id} className={cn("transition-opacity", !unlocked && "opacity-40 grayscale")}>
               <CardContent className="flex items-start gap-4 p-5">

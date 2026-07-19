@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Gauge, Trophy, BarChart3, CalendarDays, Grid3x3 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { HelpModal } from "@/components/help/HelpModal";
 
 const NAV = [
   { href: "/puzzles", label: "Puzzles", icon: Grid3x3 },
@@ -21,6 +22,7 @@ export function Header() {
           Auto<span className="text-racing-red">crosswords</span>
         </Link>
         <nav className="flex items-center gap-1">
+          <HelpModal />
           {NAV.map((item) => {
             const Icon = item.icon;
             const active = pathname.startsWith(item.href);

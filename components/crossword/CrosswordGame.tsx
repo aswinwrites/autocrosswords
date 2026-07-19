@@ -5,6 +5,7 @@ import type { Puzzle } from "@/types/puzzle";
 import { useGameStore } from "@/lib/store/useGameStore";
 import { useProgressStore } from "@/lib/store/useProgressStore";
 import { Grid } from "@/components/crossword/Grid";
+import { Legend } from "@/components/crossword/Legend";
 import { ClueBar } from "@/components/crossword/ClueBar";
 import { ClueList } from "@/components/crossword/ClueList";
 import { Toolbar } from "@/components/crossword/Toolbar";
@@ -160,9 +161,12 @@ export function CrosswordGame({ puzzle, allPuzzleIds, isDaily = false }: { puzzl
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 pb-16 pt-4 lg:flex-row lg:gap-6">
       <div className="flex flex-1 flex-col gap-4">
-        <Toolbar onOpenHints={() => setHintsOpen(true)} />
-        <ClueBar />
+        <div className="sticky top-16 z-30 flex flex-col gap-2 bg-charcoal-950/80 backdrop-blur-xl pb-2 pt-1 -mx-4 px-4 lg:static lg:mx-0 lg:bg-transparent lg:px-0 lg:backdrop-blur-none">
+          <Toolbar onOpenHints={() => setHintsOpen(true)} />
+          <ClueBar />
+        </div>
         <Grid />
+        <Legend />
       </div>
       <div className="lg:w-96">
         <ClueList />

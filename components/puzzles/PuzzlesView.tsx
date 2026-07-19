@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Lock, Clock, ListChecks, Star, Search } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { useProgressStore } from "@/lib/store/useProgressStore";
 import type { PuzzleSummary, Difficulty, Category } from "@/types/puzzle";
 import { cn } from "@/lib/utils";
@@ -117,18 +118,25 @@ export function PuzzlesView({ summaries }: { summaries: PuzzleSummary[] }) {
                       <span className="flex items-center gap-1">
                         <ListChecks className="h-3.5 w-3.5" /> {p.clueCount} clues
                       </span>
-                      <span
-                        className={cn(
-                          "rounded px-1.5 py-0.5 font-semibold",
-                          p.difficulty === "Easy" && "bg-emerald-500/20 text-emerald-400",
-                          p.difficulty === "Medium" && "bg-blue-500/20 text-blue-400",
-                          p.difficulty === "Hard" && "bg-amber-500/20 text-amber-400",
-                          p.difficulty === "Expert" && "bg-orange-500/20 text-orange-400",
-                          p.difficulty === "Legend" && "bg-fuchsia-500/20 text-fuchsia-400"
-                        )}
-                      >
-                        {p.difficulty}
-                      </span>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span
+                            className={cn(
+                              "rounded px-1.5 py-0.5 font-semibold cursor-help",
+                              p.difficulty === "Easy" && "bg-emerald-500/20 text-emerald-400",
+                              p.difficulty === "Medium" && "bg-blue-500/20 text-blue-400",
+                              p.difficulty === "Hard" && "bg-amber-500/20 text-amber-400",
+                              p.difficulty === "Expert" && "bg-orange-500/20 text-orange-400",
+                              p.difficulty === "Legend" && "bg-fuchsia-500/20 text-fuchsia-400"
+                            )}
+                          >
+                            {p.difficulty}
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          Larger grid, denser clues, and a bigger score multiplier than easier puzzles
+                        </TooltipContent>
+                      </Tooltip>
                     </div>
                     {result && (
                       <p className="mt-2 text-xs text-white/50">

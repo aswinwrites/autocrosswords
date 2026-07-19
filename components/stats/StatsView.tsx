@@ -1,11 +1,16 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from "recharts";
+import dynamic from "next/dynamic";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useProgressStore } from "@/lib/store/useProgressStore";
 import type { PuzzleSummary } from "@/types/puzzle";
 import { formatTime } from "@/lib/utils";
+
+const DifficultyRadar = dynamic(() => import("@/components/stats/DifficultyRadar"), {
+  ssr: false,
+  loading: () => <div className="flex h-72 items-center justify-center text-sm text-white/30">Loading chart…</div>,
+});
 
 export function StatsView({ summaries }: { summaries: PuzzleSummary[] }) {
   const [hydrated, setHydrated] = useState(false);
@@ -61,14 +66,7 @@ export function StatsView({ summaries }: { summaries: PuzzleSummary[] }) {
           <CardTitle>Difficulty Breakdown</CardTitle>
         </CardHeader>
         <CardContent className="h-72">
-          <ResponsiveContainer width="100%" height="100%">
-            <RadarChart data={radarData} outerRadius="75%">
-              <PolarGrid stroke="rgba(255,255,255,0.1)" />
-              <PolarAngleAxis dataKey="difficulty" tick={{ fill: "rgba(255,255,255,0.6)", fontSize: 12 }} />
-              <PolarRadiusAxis tick={{ fill: "rgba(255,255,255,0.3)", fontSize: 10 }} />
-              <Radar dataKey="count" stroke="#E10600" fill="#E10600" fillOpacity={0.35} />
-            </RadarChart>
-          </ResponsiveContainer>
+          <DifficultyRadar data={radarData} />
         </CardContent>
       </Card>
     </div>
