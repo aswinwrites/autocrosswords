@@ -1,0 +1,304 @@
+{
+  "id": "puzzle-008",
+  "week": 8,
+  "title": "German Engineering — Week 8",
+  "difficulty": "Easy",
+  "category": "German Engineering",
+  "theme": "German Engineering",
+  "rows": 13,
+  "cols": 12,
+  "grid": [
+    [
+      null,
+      null,
+      "A",
+      null,
+      null,
+      null,
+      null,
+      "V",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "Q",
+      "U",
+      "A",
+      "T",
+      "T",
+      "R",
+      "O",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "D",
+      null,
+      null,
+      null,
+      null,
+      "L",
+      null,
+      "B",
+      "M",
+      "W"
+    ],
+    [
+      null,
+      null,
+      "I",
+      null,
+      null,
+      null,
+      null,
+      "K",
+      null,
+      null,
+      "E",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "W",
+      "O",
+      "L",
+      "F",
+      "S",
+      "B",
+      "U",
+      "R",
+      "G"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "P",
+      null,
+      null,
+      "W",
+      null,
+      null,
+      "C",
+      null
+    ],
+    [
+      "Z",
+      "U",
+      "F",
+      "F",
+      "E",
+      "N",
+      "H",
+      "A",
+      "U",
+      "S",
+      "E",
+      "N"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "L",
+      null,
+      null,
+      "G",
+      null,
+      null,
+      "D",
+      null
+    ],
+    [
+      null,
+      "S",
+      null,
+      null,
+      null,
+      "B",
+      null,
+      "E",
+      "L",
+      "F",
+      "E",
+      "R"
+    ],
+    [
+      "A",
+      "U",
+      "T",
+      "O",
+      "B",
+      "A",
+      "H",
+      "N",
+      null,
+      null,
+      "S",
+      null
+    ],
+    [
+      null,
+      "V",
+      null,
+      null,
+      null,
+      "D",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "G",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "P",
+      "R",
+      "E",
+      "C",
+      "I",
+      "S",
+      "I",
+      "O",
+      "N"
+    ]
+  ],
+  "across": [
+    {
+      "number": 3,
+      "answer": "QUATTRO",
+      "clue": "Audi's permanent all-wheel-drive system",
+      "startRow": 1,
+      "startCol": 1,
+      "direction": "across"
+    },
+    {
+      "number": 4,
+      "answer": "BMW",
+      "clue": "Bavarian Motor Works, maker of the 3 Series",
+      "startRow": 2,
+      "startCol": 9,
+      "direction": "across"
+    },
+    {
+      "number": 6,
+      "answer": "WOLFSBURG",
+      "clue": "Volkswagen's headquarters city",
+      "startRow": 4,
+      "startCol": 3,
+      "direction": "across"
+    },
+    {
+      "number": 8,
+      "answer": "ZUFFENHAUSEN",
+      "clue": "Stuttgart district home to Porsche's factory",
+      "startRow": 6,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 11,
+      "answer": "ELFER",
+      "clue": "German nickname for the Porsche 911",
+      "startRow": 8,
+      "startCol": 7,
+      "direction": "across"
+    },
+    {
+      "number": 12,
+      "answer": "AUTOBAHN",
+      "clue": "German motorway famous for unrestricted sections",
+      "startRow": 9,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 13,
+      "answer": "PRECISION",
+      "clue": "Quality German engineering is most often praised for",
+      "startRow": 12,
+      "startCol": 3,
+      "direction": "across"
+    }
+  ],
+  "down": [
+    {
+      "number": 1,
+      "answer": "AUDI",
+      "clue": "Marque with a four-ring logo representing four founding companies",
+      "startRow": 0,
+      "startCol": 2,
+      "direction": "down"
+    },
+    {
+      "number": 2,
+      "answer": "VOLKSWAGEN",
+      "clue": "The people's car company, maker of the Golf",
+      "startRow": 0,
+      "startCol": 7,
+      "direction": "down"
+    },
+    {
+      "number": 5,
+      "answer": "MERCEDES",
+      "clue": "Marque with a three-pointed star badge",
+      "startRow": 2,
+      "startCol": 10,
+      "direction": "down"
+    },
+    {
+      "number": 7,
+      "answer": "OPEL",
+      "clue": "German marque long owned by GM, now part of Stellantis",
+      "startRow": 4,
+      "startCol": 4,
+      "direction": "down"
+    },
+    {
+      "number": 9,
+      "answer": "SUV",
+      "clue": "Popular body style German makers now build widely",
+      "startRow": 8,
+      "startCol": 1,
+      "direction": "down"
+    },
+    {
+      "number": 10,
+      "answer": "BADGE",
+      "clue": "Emblem denoting a German model's trim or engine size",
+      "startRow": 8,
+      "startCol": 5,
+      "direction": "down"
+    }
+  ],
+  "author": "Autocrosswords Studio",
+  "estimatedTime": 5
+}

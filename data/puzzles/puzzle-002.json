@@ -1,0 +1,341 @@
+{
+  "id": "puzzle-002",
+  "week": 2,
+  "title": "Formula 1 — Week 2",
+  "difficulty": "Easy",
+  "category": "Formula 1",
+  "theme": "Formula 1",
+  "rows": 13,
+  "cols": 13,
+  "grid": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "H",
+      "I",
+      "L",
+      "L"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "A",
+      null,
+      null,
+      "A"
+    ],
+    [
+      null,
+      null,
+      "P",
+      "A",
+      "R",
+      "C",
+      "F",
+      "E",
+      "R",
+      "M",
+      "E",
+      null,
+      "U"
+    ],
+    [
+      null,
+      "P",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "I",
+      null,
+      null,
+      "D"
+    ],
+    [
+      "D",
+      "R",
+      "S",
+      null,
+      "H",
+      "A",
+      "L",
+      "O",
+      null,
+      "L",
+      null,
+      null,
+      "A"
+    ],
+    [
+      null,
+      "O",
+      null,
+      "C",
+      null,
+      "P",
+      null,
+      null,
+      null,
+      "T",
+      null,
+      "F",
+      null
+    ],
+    [
+      null,
+      "S",
+      "I",
+      "L",
+      "V",
+      "E",
+      "R",
+      "S",
+      "T",
+      "O",
+      "N",
+      "E",
+      null
+    ],
+    [
+      null,
+      "T",
+      null,
+      "A",
+      null,
+      "X",
+      null,
+      "E",
+      null,
+      "N",
+      null,
+      "R",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "R",
+      null,
+      null,
+      null,
+      "N",
+      null,
+      null,
+      null,
+      "R",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "K",
+      null,
+      "P",
+      null,
+      "N",
+      null,
+      null,
+      null,
+      "A",
+      null
+    ],
+    [
+      null,
+      null,
+      "S",
+      null,
+      "M",
+      "O",
+      "N",
+      "A",
+      "C",
+      "O",
+      null,
+      "R",
+      null
+    ],
+    [
+      null,
+      null,
+      "P",
+      null,
+      null,
+      "L",
+      null,
+      null,
+      null,
+      null,
+      null,
+      "I",
+      null
+    ],
+    [
+      null,
+      "M",
+      "A",
+      "N",
+      "S",
+      "E",
+      "L",
+      "L",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "across": [
+    {
+      "number": 1,
+      "answer": "HILL",
+      "clue": "Surname shared by father Graham and son Damon, both champions",
+      "startRow": 0,
+      "startCol": 9,
+      "direction": "across"
+    },
+    {
+      "number": 3,
+      "answer": "PARCFERME",
+      "clue": "Restricted area where cars are held after qualifying",
+      "startRow": 2,
+      "startCol": 2,
+      "direction": "across"
+    },
+    {
+      "number": 5,
+      "answer": "DRS",
+      "clue": "Drag reduction system abbreviation for overtaking aid",
+      "startRow": 4,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 6,
+      "answer": "HALO",
+      "clue": "Cockpit protection device introduced in 2018",
+      "startRow": 4,
+      "startCol": 4,
+      "direction": "across"
+    },
+    {
+      "number": 10,
+      "answer": "SILVERSTONE",
+      "clue": "Home of the British Grand Prix",
+      "startRow": 6,
+      "startCol": 1,
+      "direction": "across"
+    },
+    {
+      "number": 14,
+      "answer": "MONACO",
+      "clue": "Glamorous street circuit through Monte Carlo",
+      "startRow": 10,
+      "startCol": 4,
+      "direction": "across"
+    },
+    {
+      "number": 15,
+      "answer": "MANSELL",
+      "clue": "British champion known for his 1992 dominant season",
+      "startRow": 12,
+      "startCol": 1,
+      "direction": "across"
+    }
+  ],
+  "down": [
+    {
+      "number": 1,
+      "answer": "HAMILTON",
+      "clue": "Seven-time F1 champion, knighted Lewis",
+      "startRow": 0,
+      "startCol": 9,
+      "direction": "down"
+    },
+    {
+      "number": 2,
+      "answer": "LAUDA",
+      "clue": "Austrian champion who survived a fiery Nurburgring crash",
+      "startRow": 0,
+      "startCol": 12,
+      "direction": "down"
+    },
+    {
+      "number": 4,
+      "answer": "PROST",
+      "clue": "Frenchman nicknamed 'The Professor'",
+      "startRow": 3,
+      "startCol": 1,
+      "direction": "down"
+    },
+    {
+      "number": 7,
+      "answer": "APEX",
+      "clue": "Innermost point of a corner on a racing line",
+      "startRow": 4,
+      "startCol": 5,
+      "direction": "down"
+    },
+    {
+      "number": 8,
+      "answer": "CLARK",
+      "clue": "Scottish double champion, died at Hockenheim in 1968",
+      "startRow": 5,
+      "startCol": 3,
+      "direction": "down"
+    },
+    {
+      "number": 9,
+      "answer": "FERRARI",
+      "clue": "Scuderia based in Maranello, F1's oldest team",
+      "startRow": 5,
+      "startCol": 11,
+      "direction": "down"
+    },
+    {
+      "number": 11,
+      "answer": "SENNA",
+      "clue": "Brazilian legend who died at Imola in 1994",
+      "startRow": 6,
+      "startCol": 7,
+      "direction": "down"
+    },
+    {
+      "number": 12,
+      "answer": "POLE",
+      "clue": "Term for the fastest qualifier's starting position",
+      "startRow": 9,
+      "startCol": 5,
+      "direction": "down"
+    },
+    {
+      "number": 13,
+      "answer": "SPA",
+      "clue": "Belgian circuit featuring the Eau Rouge corner",
+      "startRow": 10,
+      "startCol": 2,
+      "direction": "down"
+    }
+  ],
+  "author": "Autocrosswords Studio",
+  "estimatedTime": 6
+}

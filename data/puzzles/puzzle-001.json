@@ -1,0 +1,299 @@
+{
+  "id": "puzzle-001",
+  "week": 1,
+  "title": "Classic Cars — Week 1",
+  "difficulty": "Easy",
+  "category": "Classic Cars",
+  "theme": "Classic Cars",
+  "rows": 13,
+  "cols": 11,
+  "grid": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "M",
+      "G",
+      "B",
+      null,
+      null
+    ],
+    [
+      "N",
+      "A",
+      "S",
+      "H",
+      null,
+      null,
+      null,
+      "T",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "U",
+      null,
+      "W",
+      "O",
+      "O",
+      "D",
+      "Y",
+      null
+    ],
+    [
+      null,
+      "D",
+      null,
+      "D",
+      null,
+      "H",
+      null,
+      null,
+      null,
+      null,
+      "F"
+    ],
+    [
+      null,
+      "A",
+      null,
+      "S",
+      "P",
+      "I",
+      "T",
+      "F",
+      "I",
+      "R",
+      "E"
+    ],
+    [
+      null,
+      "S",
+      null,
+      "O",
+      null,
+      "T",
+      null,
+      null,
+      null,
+      null,
+      "N"
+    ],
+    [
+      "T",
+      "H",
+      "U",
+      "N",
+      "D",
+      "E",
+      "R",
+      "B",
+      "I",
+      "R",
+      "D"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "W",
+      null,
+      null,
+      null,
+      null,
+      "E"
+    ],
+    [
+      null,
+      "K",
+      "A",
+      "R",
+      "M",
+      "A",
+      "N",
+      "N",
+      null,
+      null,
+      "R"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "L",
+      null,
+      null,
+      null,
+      "T",
+      null
+    ],
+    [
+      null,
+      "R",
+      "U",
+      "M",
+      "B",
+      "L",
+      "E",
+      "S",
+      "E",
+      "A",
+      "T"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "I",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "F",
+      "I",
+      "N",
+      "T",
+      "A",
+      "I",
+      "L",
+      null
+    ]
+  ],
+  "across": [
+    {
+      "number": 1,
+      "answer": "MGB",
+      "clue": "Iconic British roadster made by MG, three letters",
+      "startRow": 0,
+      "startCol": 6,
+      "direction": "across"
+    },
+    {
+      "number": 3,
+      "answer": "NASH",
+      "clue": "Automaker that merged with Hudson to form AMC",
+      "startRow": 1,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 5,
+      "answer": "WOODY",
+      "clue": "Slang for a car with wood-paneled bodywork",
+      "startRow": 2,
+      "startCol": 5,
+      "direction": "across"
+    },
+    {
+      "number": 8,
+      "answer": "SPITFIRE",
+      "clue": "Triumph roadster sharing its name with a WWII fighter",
+      "startRow": 4,
+      "startCol": 3,
+      "direction": "across"
+    },
+    {
+      "number": 9,
+      "answer": "THUNDERBIRD",
+      "clue": "Ford personal luxury car nicknamed T-Bird",
+      "startRow": 6,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 10,
+      "answer": "KARMANN",
+      "clue": "Ghia coachbuilder paired with Volkswagen",
+      "startRow": 8,
+      "startCol": 1,
+      "direction": "across"
+    },
+    {
+      "number": 12,
+      "answer": "RUMBLESEAT",
+      "clue": "Fold-out open seat at the rear of some pre-war cars",
+      "startRow": 10,
+      "startCol": 1,
+      "direction": "across"
+    },
+    {
+      "number": 13,
+      "answer": "FINTAIL",
+      "clue": "Styling trend borrowed from aircraft, popular in the late 1950s",
+      "startRow": 12,
+      "startCol": 3,
+      "direction": "across"
+    }
+  ],
+  "down": [
+    {
+      "number": 2,
+      "answer": "GTO",
+      "clue": "Pontiac muscle car whose name echoes a Ferrari homologation",
+      "startRow": 0,
+      "startCol": 7,
+      "direction": "down"
+    },
+    {
+      "number": 4,
+      "answer": "HUDSON",
+      "clue": "Marque that built the Hornet, famed in NASCAR's early days",
+      "startRow": 1,
+      "startCol": 3,
+      "direction": "down"
+    },
+    {
+      "number": 5,
+      "answer": "WHITEWALL",
+      "clue": "Classic tire style with a light-colored sidewall band",
+      "startRow": 2,
+      "startCol": 5,
+      "direction": "down"
+    },
+    {
+      "number": 6,
+      "answer": "DASH",
+      "clue": "Short word for a car's instrument panel",
+      "startRow": 3,
+      "startCol": 1,
+      "direction": "down"
+    },
+    {
+      "number": 7,
+      "answer": "FENDER",
+      "clue": "Body panel covering the wheel well",
+      "startRow": 3,
+      "startCol": 10,
+      "direction": "down"
+    },
+    {
+      "number": 11,
+      "answer": "TAIL",
+      "clue": "Fin at a classic car's rear, styling flourish",
+      "startRow": 9,
+      "startCol": 9,
+      "direction": "down"
+    }
+  ],
+  "author": "Autocrosswords Studio",
+  "estimatedTime": 5
+}

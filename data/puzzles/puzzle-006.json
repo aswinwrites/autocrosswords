@@ -1,0 +1,333 @@
+{
+  "id": "puzzle-006",
+  "week": 6,
+  "title": "Japanese Cars — Week 6",
+  "difficulty": "Easy",
+  "category": "Japanese Cars",
+  "theme": "Japanese Cars",
+  "rows": 13,
+  "cols": 13,
+  "grid": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "N"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "S",
+      "U",
+      "Z",
+      "U",
+      "K",
+      "I"
+    ],
+    [
+      null,
+      null,
+      "H",
+      null,
+      null,
+      "C",
+      null,
+      "U",
+      null,
+      "C",
+      null,
+      null,
+      "S"
+    ],
+    [
+      null,
+      null,
+      "O",
+      null,
+      null,
+      "I",
+      null,
+      "B",
+      null,
+      "A",
+      null,
+      null,
+      "S"
+    ],
+    [
+      null,
+      null,
+      "N",
+      null,
+      null,
+      "V",
+      null,
+      "A",
+      null,
+      "R",
+      null,
+      null,
+      "A"
+    ],
+    [
+      null,
+      null,
+      "D",
+      null,
+      null,
+      "I",
+      null,
+      "R",
+      null,
+      null,
+      null,
+      null,
+      "N"
+    ],
+    [
+      null,
+      "L",
+      "A",
+      "N",
+      "D",
+      "C",
+      "R",
+      "U",
+      "I",
+      "S",
+      "E",
+      "R",
+      null
+    ],
+    [
+      null,
+      "E",
+      null,
+      null,
+      null,
+      null,
+      "O",
+      null,
+      null,
+      "K",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "X",
+      null,
+      "D",
+      null,
+      null,
+      "T",
+      null,
+      null,
+      "Y",
+      null,
+      null,
+      null
+    ],
+    [
+      "S",
+      "U",
+      "P",
+      "R",
+      "A",
+      null,
+      "A",
+      null,
+      null,
+      "L",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "S",
+      null,
+      "I",
+      null,
+      "W",
+      "R",
+      "X",
+      null,
+      "I",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "F",
+      null,
+      null,
+      "Y",
+      null,
+      null,
+      "N",
+      null,
+      null,
+      null
+    ],
+    [
+      "M",
+      "I",
+      "A",
+      "T",
+      "A",
+      null,
+      null,
+      null,
+      null,
+      "E",
+      "V",
+      "O",
+      null
+    ]
+  ],
+  "across": [
+    {
+      "number": 2,
+      "answer": "SUZUKI",
+      "clue": "Maker known for small cars and the Jimny",
+      "startRow": 1,
+      "startCol": 7,
+      "direction": "across"
+    },
+    {
+      "number": 6,
+      "answer": "LANDCRUISER",
+      "clue": "Toyota's rugged long-running SUV",
+      "startRow": 6,
+      "startCol": 1,
+      "direction": "across"
+    },
+    {
+      "number": 10,
+      "answer": "SUPRA",
+      "clue": "Toyota sports coupe reborn with BMW cooperation",
+      "startRow": 9,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 11,
+      "answer": "WRX",
+      "clue": "Subaru's turbocharged performance sedan badge",
+      "startRow": 10,
+      "startCol": 5,
+      "direction": "across"
+    },
+    {
+      "number": 12,
+      "answer": "MIATA",
+      "clue": "Mazda's lightweight roadster, also called MX-5",
+      "startRow": 12,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 13,
+      "answer": "EVO",
+      "clue": "Short nickname for the Mitsubishi Lancer Evolution",
+      "startRow": 12,
+      "startCol": 9,
+      "direction": "across"
+    }
+  ],
+  "down": [
+    {
+      "number": 1,
+      "answer": "NISSAN",
+      "clue": "Maker of the GT-R, allied with Renault",
+      "startRow": 0,
+      "startCol": 12,
+      "direction": "down"
+    },
+    {
+      "number": 2,
+      "answer": "SUBARU",
+      "clue": "Maker known for boxer engines and symmetrical AWD",
+      "startRow": 1,
+      "startCol": 7,
+      "direction": "down"
+    },
+    {
+      "number": 3,
+      "answer": "ZCAR",
+      "clue": "Nissan sports car lineage including the 240Z and 370Z",
+      "startRow": 1,
+      "startCol": 9,
+      "direction": "down"
+    },
+    {
+      "number": 4,
+      "answer": "HONDA",
+      "clue": "Maker of the Civic and NSX",
+      "startRow": 2,
+      "startCol": 2,
+      "direction": "down"
+    },
+    {
+      "number": 5,
+      "answer": "CIVIC",
+      "clue": "Honda's long-running compact car",
+      "startRow": 2,
+      "startCol": 5,
+      "direction": "down"
+    },
+    {
+      "number": 6,
+      "answer": "LEXUS",
+      "clue": "Toyota's luxury arm launched in 1989",
+      "startRow": 6,
+      "startCol": 1,
+      "direction": "down"
+    },
+    {
+      "number": 7,
+      "answer": "ROTARY",
+      "clue": "Wankel-type engine famously used by Mazda",
+      "startRow": 6,
+      "startCol": 6,
+      "direction": "down"
+    },
+    {
+      "number": 8,
+      "answer": "SKYLINE",
+      "clue": "Nissan nameplate that became the GT-R",
+      "startRow": 6,
+      "startCol": 9,
+      "direction": "down"
+    },
+    {
+      "number": 9,
+      "answer": "DRIFT",
+      "clue": "Sliding cornering technique popularized in Japan",
+      "startRow": 8,
+      "startCol": 3,
+      "direction": "down"
+    }
+  ],
+  "author": "Autocrosswords Studio",
+  "estimatedTime": 7
+}

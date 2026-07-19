@@ -1,0 +1,282 @@
+{
+  "id": "puzzle-004",
+  "week": 4,
+  "title": "Aircraft — Week 4",
+  "difficulty": "Easy",
+  "category": "Aircraft",
+  "theme": "Aircraft",
+  "rows": 12,
+  "cols": 12,
+  "grid": [
+    [
+      null,
+      null,
+      null,
+      null,
+      "C",
+      null,
+      "W",
+      "R",
+      "I",
+      "G",
+      "H",
+      "T"
+    ],
+    [
+      null,
+      "R",
+      null,
+      null,
+      "O",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "H"
+    ],
+    [
+      null,
+      "U",
+      null,
+      null,
+      "C",
+      null,
+      null,
+      null,
+      "F",
+      null,
+      null,
+      "R"
+    ],
+    [
+      null,
+      "N",
+      null,
+      null,
+      "K",
+      null,
+      null,
+      "J",
+      "U",
+      "M",
+      "B",
+      "O"
+    ],
+    [
+      null,
+      "W",
+      null,
+      null,
+      "P",
+      null,
+      "C",
+      null,
+      "S",
+      null,
+      null,
+      "T"
+    ],
+    [
+      null,
+      "A",
+      "L",
+      "T",
+      "I",
+      "M",
+      "E",
+      "T",
+      "E",
+      "R",
+      null,
+      "T"
+    ],
+    [
+      null,
+      "Y",
+      null,
+      null,
+      "T",
+      null,
+      "S",
+      null,
+      "L",
+      null,
+      null,
+      "L"
+    ],
+    [
+      null,
+      null,
+      "F",
+      null,
+      null,
+      null,
+      "S",
+      null,
+      "A",
+      null,
+      null,
+      "E"
+    ],
+    [
+      "A",
+      "I",
+      "L",
+      "E",
+      "R",
+      "O",
+      "N",
+      null,
+      "G",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "A",
+      null,
+      null,
+      null,
+      "A",
+      "M",
+      "E",
+      "L",
+      "I",
+      "A"
+    ],
+    [
+      null,
+      null,
+      "P",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "M",
+      "U",
+      "S",
+      "T",
+      "A",
+      "N",
+      "G",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "across": [
+    {
+      "number": 2,
+      "answer": "WRIGHT",
+      "clue": "Brothers credited with the first powered flight",
+      "startRow": 0,
+      "startCol": 6,
+      "direction": "across"
+    },
+    {
+      "number": 6,
+      "answer": "JUMBO",
+      "clue": "Nickname for the Boeing 747",
+      "startRow": 3,
+      "startCol": 7,
+      "direction": "across"
+    },
+    {
+      "number": 8,
+      "answer": "ALTIMETER",
+      "clue": "Instrument that measures an aircraft's height",
+      "startRow": 5,
+      "startCol": 1,
+      "direction": "across"
+    },
+    {
+      "number": 10,
+      "answer": "AILERON",
+      "clue": "Control surface on the wing that governs roll",
+      "startRow": 8,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 11,
+      "answer": "AMELIA",
+      "clue": "First name of aviator Earhart",
+      "startRow": 9,
+      "startCol": 6,
+      "direction": "across"
+    },
+    {
+      "number": 12,
+      "answer": "MUSTANG",
+      "clue": "P-51, American long-range WWII escort fighter",
+      "startRow": 11,
+      "startCol": 0,
+      "direction": "across"
+    }
+  ],
+  "down": [
+    {
+      "number": 1,
+      "answer": "COCKPIT",
+      "clue": "Forward compartment where pilots sit",
+      "startRow": 0,
+      "startCol": 4,
+      "direction": "down"
+    },
+    {
+      "number": 3,
+      "answer": "THROTTLE",
+      "clue": "Lever controlling engine power in a cockpit",
+      "startRow": 0,
+      "startCol": 11,
+      "direction": "down"
+    },
+    {
+      "number": 4,
+      "answer": "RUNWAY",
+      "clue": "Paved strip used for takeoff and landing",
+      "startRow": 1,
+      "startCol": 1,
+      "direction": "down"
+    },
+    {
+      "number": 5,
+      "answer": "FUSELAGE",
+      "clue": "Main body of an aircraft holding crew and cargo",
+      "startRow": 2,
+      "startCol": 8,
+      "direction": "down"
+    },
+    {
+      "number": 7,
+      "answer": "CESSNA",
+      "clue": "Common maker of small single-engine light aircraft",
+      "startRow": 4,
+      "startCol": 6,
+      "direction": "down"
+    },
+    {
+      "number": 9,
+      "answer": "FLAPS",
+      "clue": "Wing surfaces extended to increase lift at low speed",
+      "startRow": 7,
+      "startCol": 2,
+      "direction": "down"
+    }
+  ],
+  "author": "Autocrosswords Studio",
+  "estimatedTime": 5
+}

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 13% 5%;
+  --foreground: 0 0% 98%;
+  --card: 220 13% 8%;
+  --card-foreground: 0 0% 98%;
+  --border: 0 0% 100%;
+  --muted: 220 10% 16%;
+  --muted-foreground: 220 5% 65%;
+}
+
+* {
+  border-color: hsl(var(--border) / 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0b0d;
+  color: #fafafa;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.high-contrast {
+  filter: contrast(1.25) saturate(1.1);
+}
+
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(0, 217, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.racetrack-line {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.35) 0px,
+    rgba(255, 255, 255, 0.35) 24px,
+    transparent 24px,
+    transparent 48px
+  );
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient-racing {
+  background: linear-gradient(90deg, #ffffff 0%, #ff5c54 50%, #00d9ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

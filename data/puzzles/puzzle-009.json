@@ -1,0 +1,312 @@
+{
+  "id": "puzzle-009",
+  "week": 9,
+  "title": "Indian Automobiles — Week 9",
+  "difficulty": "Easy",
+  "category": "Indian Automobiles",
+  "theme": "Indian Automobiles",
+  "rows": 13,
+  "cols": 12,
+  "grid": [
+    [
+      "M",
+      "A",
+      "R",
+      "U",
+      "T",
+      "I",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "A",
+      null,
+      null,
+      null,
+      null,
+      null,
+      "T",
+      "V",
+      "S",
+      null,
+      null,
+      null
+    ],
+    [
+      "H",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "C",
+      "N",
+      "G",
+      null
+    ],
+    [
+      "I",
+      null,
+      null,
+      "B",
+      null,
+      null,
+      "C",
+      null,
+      "O",
+      null,
+      null,
+      null
+    ],
+    [
+      "N",
+      null,
+      null,
+      "A",
+      null,
+      null,
+      "H",
+      null,
+      "R",
+      null,
+      null,
+      null
+    ],
+    [
+      "D",
+      null,
+      null,
+      "J",
+      null,
+      null,
+      "E",
+      null,
+      "P",
+      null,
+      null,
+      null
+    ],
+    [
+      "R",
+      "O",
+      "Y",
+      "A",
+      "L",
+      "E",
+      "N",
+      "F",
+      "I",
+      "E",
+      "L",
+      "D"
+    ],
+    [
+      "A",
+      null,
+      null,
+      "J",
+      null,
+      null,
+      "N",
+      null,
+      "O",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "A",
+      null,
+      null,
+      "S",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "H",
+      "I",
+      "G",
+      "H",
+      "W",
+      "A",
+      "Y"
+    ],
+    [
+      null,
+      null,
+      "P",
+      "U",
+      "N",
+      "E",
+      null,
+      null,
+      null,
+      "I",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "R",
+      null,
+      null,
+      null,
+      "F",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "N",
+      "A",
+      "N",
+      "O",
+      null,
+      "T",
+      "A",
+      "T",
+      "A",
+      null
+    ]
+  ],
+  "across": [
+    {
+      "number": 1,
+      "answer": "MARUTI",
+      "clue": "India's largest carmaker, joint venture with Suzuki",
+      "startRow": 0,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 2,
+      "answer": "TVS",
+      "clue": "Indian two- and three-wheeler manufacturer",
+      "startRow": 1,
+      "startCol": 6,
+      "direction": "across"
+    },
+    {
+      "number": 4,
+      "answer": "CNG",
+      "clue": "Compressed gas fuel widely used in Indian city vehicles",
+      "startRow": 2,
+      "startCol": 8,
+      "direction": "across"
+    },
+    {
+      "number": 7,
+      "answer": "ROYALENFIELD",
+      "clue": "Indian marque known for the Bullet, oldest motorcycle brand in continuous production",
+      "startRow": 6,
+      "startCol": 0,
+      "direction": "across"
+    },
+    {
+      "number": 9,
+      "answer": "HIGHWAY",
+      "clue": "Term for India's expanding national road network",
+      "startRow": 9,
+      "startCol": 5,
+      "direction": "across"
+    },
+    {
+      "number": 10,
+      "answer": "PUNE",
+      "clue": "Maharashtra city home to major auto manufacturing plants",
+      "startRow": 10,
+      "startCol": 2,
+      "direction": "across"
+    },
+    {
+      "number": 11,
+      "answer": "NANO",
+      "clue": "Tata's ultra-affordable small car launched in 2008",
+      "startRow": 12,
+      "startCol": 2,
+      "direction": "across"
+    },
+    {
+      "number": 12,
+      "answer": "TATA",
+      "clue": "Indian conglomerate that owns Jaguar Land Rover",
+      "startRow": 12,
+      "startCol": 7,
+      "direction": "across"
+    }
+  ],
+  "down": [
+    {
+      "number": 1,
+      "answer": "MAHINDRA",
+      "clue": "Indian maker known for SUVs like the Scorpio",
+      "startRow": 0,
+      "startCol": 0,
+      "direction": "down"
+    },
+    {
+      "number": 3,
+      "answer": "SCORPIO",
+      "clue": "Popular Mahindra SUV nameplate",
+      "startRow": 1,
+      "startCol": 8,
+      "direction": "down"
+    },
+    {
+      "number": 5,
+      "answer": "BAJAJ",
+      "clue": "Indian two-wheeler giant known for the Pulsar",
+      "startRow": 3,
+      "startCol": 3,
+      "direction": "down"
+    },
+    {
+      "number": 6,
+      "answer": "CHENNAI",
+      "clue": "South Indian city nicknamed the Detroit of India",
+      "startRow": 3,
+      "startCol": 6,
+      "direction": "down"
+    },
+    {
+      "number": 8,
+      "answer": "SWIFT",
+      "clue": "Best-selling Maruti Suzuki hatchback",
+      "startRow": 8,
+      "startCol": 9,
+      "direction": "down"
+    },
+    {
+      "number": 9,
+      "answer": "HERO",
+      "clue": "World's largest motorcycle manufacturer by volume, Indian",
+      "startRow": 9,
+      "startCol": 5,
+      "direction": "down"
+    }
+  ],
+  "author": "Autocrosswords Studio",
+  "estimatedTime": 5
+}
