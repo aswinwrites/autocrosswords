@@ -7,14 +7,25 @@ import { Button } from "@/components/ui/button";
 import type { Puzzle } from "@/types/puzzle";
 import type { PuzzleResult } from "@/types/game";
 import { formatTime } from "@/lib/utils";
-import { Trophy, Clock, Target, Lightbulb, Share2, ArrowRight } from "lucide-react";
+import { Trophy, Eye, Clock, Target, Lightbulb, Share2, ArrowRight } from "lucide-react";
 
-export function EndScreen({ result, puzzle, onNext }: { result: PuzzleResult; puzzle: Puzzle; onNext: () => void }) {
+export function EndScreen({
+  result,
+  puzzle,
+  onNext,
+  puzzleRevealed = false,
+}: {
+  result: PuzzleResult;
+  puzzle: Puzzle;
+  onNext: () => void;
+  puzzleRevealed?: boolean;
+}) {
   const fired = useRef(false);
 
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
+    if (puzzleRevealed) return;
     const duration = 1200;
     const end = Date.now() + duration;
     (function frame() {
@@ -22,7 +33,7 @@ export function EndScreen({ result, puzzle, onNext }: { result: PuzzleResult; pu
       confetti({ particleCount: 4, angle: 120, spread: 60, origin: { x: 1 }, colors: ["#E10600", "#00D9FF", "#FACC15"] });
       if (Date.now() < end) requestAnimationFrame(frame);
     })();
-  }, []);
+  }, [puzzleRevealed]);
 
   const rows: { label: string; value: number; positive?: boolean }[] = [
     { label: "Base score", value: result.breakdown.base },
@@ -51,9 +62,15 @@ export function EndScreen({ result, puzzle, onNext }: { result: PuzzleResult; pu
       <DialogContent className="max-w-md">
         <div className="flex flex-col items-center text-center">
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", bounce: 0.5 }}>
-            <Trophy className="h-14 w-14 text-amber-400 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]" />
+            {puzzleRevealed ? (
+              <Eye className="h-14 w-14 text-white/50" />
+            ) : (
+              <Trophy className="h-14 w-14 text-amber-400 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]" />
+            )}
           </motion.div>
-          <DialogTitle className="mt-3 font-display text-2xl text-white">Puzzle Complete!</DialogTitle>
+          <DialogTitle className="mt-3 font-display text-2xl text-white">
+            {puzzleRevealed ? "Answers Revealed" : "Puzzle Complete!"}
+          </DialogTitle>
           <p className="text-white/60 text-sm">{puzzle.title}</p>
 
           <div className="mt-5 grid w-full grid-cols-3 gap-3 text-center">
@@ -64,7 +81,7 @@ export function EndScreen({ result, puzzle, onNext }: { result: PuzzleResult; pu
             </div>
             <div className="rounded-xl bg-white/5 p-3">
               <Target className="mx-auto mb-1 h-4 w-4 text-emerald-400" />
-              <div className="font-mono text-lg text-white">{result.accuracy}%</div>
+              <div className="font-mono text-lg text-white">{puzzleRevealed ? "—" : `${result.accuracy}%`}</div>
               <div className="text-[10px] uppercase text-white/40">Accuracy</div>
             </div>
             <div className="rounded-xl bg-white/5 p-3">

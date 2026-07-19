@@ -22,24 +22,29 @@ export function checkNewAchievements(
   totalCompleted: number,
   totalScore: number,
   dailyStreak: number,
-  already: Set<string>
+  already: Set<string>,
+  puzzleRevealed = false
 ): string[] {
   const earned: string[] = [];
   const add = (id: string) => {
     if (!already.has(id) && !earned.includes(id)) earned.push(id);
   };
 
-  if (result.mistakes === 0) add("perfect-accuracy");
-  if (result.hintsUsed === 0) add("no-hints");
-  if (result.timeSeconds < puzzle.estimatedTime * 30) add("speed-demon");
+  // A fully-revealed puzzle only counts toward participation-style achievements,
+  // never the skill-based ones (accuracy, no-hints, speed, per-category mastery).
+  if (!puzzleRevealed) {
+    if (result.mistakes === 0) add("perfect-accuracy");
+    if (result.hintsUsed === 0) add("no-hints");
+    if (result.timeSeconds < puzzle.estimatedTime * 30) add("speed-demon");
+    if (puzzle.category === "Aircraft") add("plane-spotter");
+    if (puzzle.category === "Formula 1" && result.mistakes === 0) add("f1-genius");
+    if (puzzle.category === "Motorcycles" || puzzle.category === "MotoGP") add("bike-buff");
+    if (puzzle.category === "Electric Vehicles") add("future-ready");
+    if (puzzle.difficulty === "Legend") add("legend-solver");
+  }
   if (totalCompleted >= 10) add("motorhead");
-  if (puzzle.category === "Aircraft") add("plane-spotter");
-  if (puzzle.category === "Formula 1" && result.mistakes === 0) add("f1-genius");
-  if (puzzle.category === "Motorcycles" || puzzle.category === "MotoGP") add("bike-buff");
-  if (puzzle.category === "Electric Vehicles") add("future-ready");
   if (totalScore >= 10000) add("centurion");
   if (dailyStreak >= 7) add("streak-7");
-  if (puzzle.difficulty === "Legend") add("legend-solver");
 
   return earned;
 }

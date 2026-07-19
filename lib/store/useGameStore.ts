@@ -16,6 +16,7 @@ interface GameState {
   timeSeconds: number;
   isPaused: boolean;
   isComplete: boolean;
+  puzzleRevealed: boolean;
   lastAction: { type: "correct" | "wrong" | "complete"; row?: number; col?: number } | null;
 
   loadPuzzle: (puzzle: Puzzle, checkMode: CheckMode, restore?: { cells: string[][]; timeSeconds: number; hintsUsed: number; mistakes: number }) => void;
@@ -32,11 +33,14 @@ interface GameState {
   revealLetter: () => void;
   revealWord: () => void;
   revealClue: () => void;
+  revealPuzzle: () => void;
   tick: () => void;
   setPaused: (paused: boolean) => void;
   clearLastAction: () => void;
   setCheckMode: (mode: CheckMode) => void;
 }
+
+export const REVEAL_PUZZLE_UNLOCK_SECONDS = 60;
 
 function blockedCell(puzzle: Puzzle, row: number, col: number): boolean {
   return puzzle.grid[row]?.[col] === null || puzzle.grid[row]?.[col] === undefined;
@@ -79,6 +83,7 @@ export const useGameStore = create<GameState>((set, get) => ({
   timeSeconds: 0,
   isPaused: false,
   isComplete: false,
+  puzzleRevealed: false,
   lastAction: null,
 
   loadPuzzle: (puzzle, checkMode, restore) => {
@@ -107,6 +112,7 @@ export const useGameStore = create<GameState>((set, get) => ({
       timeSeconds: restore?.timeSeconds ?? 0,
       isPaused: false,
       isComplete: false,
+      puzzleRevealed: false,
       lastAction: null,
     });
   },
@@ -308,6 +314,16 @@ export const useGameStore = create<GameState>((set, get) => ({
       hintsRemaining: hintsRemaining - 1,
       hintsUsed: { ...hintsUsed, revealClue: hintsUsed.revealClue + 1 },
     });
+  },
+
+  revealPuzzle: () => {
+    const { puzzle, timeSeconds } = get();
+    if (!puzzle || timeSeconds < REVEAL_PUZZLE_UNLOCK_SECONDS) return;
+    const newCells = puzzle.grid.map((row) =>
+      row.map((letter) => (letter === null ? { value: "", status: "empty" as const } : { value: letter, status: "revealed" as const }))
+    );
+    set({ cells: newCells, puzzleRevealed: true });
+    maybeComplete();
   },
 
   tick: () => {

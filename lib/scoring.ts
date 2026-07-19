@@ -10,6 +10,7 @@ export interface ScoreInputs {
   hintsUsed: { revealLetter: number; revealWord: number; revealClue: number };
   isDaily: boolean;
   totalCells: number;
+  puzzleRevealed?: boolean;
 }
 
 const BASE_SCORE = 1000;
@@ -34,6 +35,24 @@ export function computeScore(inputs: ScoreInputs): ScoreBreakdown {
 
   const slowThreshold = parTime * 2;
   const slowPenalty = inputs.timeSeconds > slowThreshold ? Math.min(200, Math.round((inputs.timeSeconds - slowThreshold) / 10)) : 0;
+
+  // Revealing the whole puzzle is a "give up and see the answers" action, not a
+  // solve — it always nets to a token score regardless of the other bonuses.
+  if (inputs.puzzleRevealed) {
+    return {
+      base,
+      speedBonus: 0,
+      noHintsBonus: 0,
+      noMistakesBonus: 0,
+      difficultyBonus: 0,
+      dailyBonus: 0,
+      mistakePenalty: 0,
+      hintPenalty: 0,
+      revealPenalty: base - 50,
+      slowPenalty: 0,
+      total: 50,
+    };
+  }
 
   const total = Math.max(
     0,

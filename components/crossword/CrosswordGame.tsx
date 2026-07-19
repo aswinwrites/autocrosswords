@@ -30,6 +30,7 @@ export function CrosswordGame({ puzzle, allPuzzleIds, isDaily = false }: { puzzl
   const toggleDirection = useGameStore((s) => s.toggleDirection);
   const tick = useGameStore((s) => s.tick);
   const isComplete = useGameStore((s) => s.isComplete);
+  const puzzleRevealed = useGameStore((s) => s.puzzleRevealed);
   const isPaused = useGameStore((s) => s.isPaused);
   const cells = useGameStore((s) => s.cells);
   const timeSeconds = useGameStore((s) => s.timeSeconds);
@@ -106,8 +107,9 @@ export function CrosswordGame({ puzzle, allPuzzleIds, isDaily = false }: { puzzl
       hintsUsed,
       isDaily,
       totalCells,
+      puzzleRevealed,
     });
-    const accuracy = Math.max(0, Math.round(((totalCells - mistakes) / totalCells) * 100));
+    const accuracy = puzzleRevealed ? 0 : Math.max(0, Math.round(((totalCells - mistakes) / totalCells) * 100));
     const puzzleResult: PuzzleResult = {
       puzzleId: puzzle.id,
       completedAt: new Date().toISOString(),
@@ -127,7 +129,8 @@ export function CrosswordGame({ puzzle, allPuzzleIds, isDaily = false }: { puzzl
       totalCompleted() + 1,
       totalScore() + breakdown.total,
       dailyStreak + 1,
-      new Set(achievements)
+      new Set(achievements),
+      puzzleRevealed
     );
     addAchievements(earned);
     setResult(puzzleResult);
@@ -176,6 +179,7 @@ export function CrosswordGame({ puzzle, allPuzzleIds, isDaily = false }: { puzzl
         <EndScreen
           result={result}
           puzzle={puzzle}
+          puzzleRevealed={puzzleRevealed}
           onNext={() => {
             const idx = allPuzzleIds.indexOf(puzzle.id);
             const next = idx >= 0 ? allPuzzleIds[idx + 1] : undefined;
